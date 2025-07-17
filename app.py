@@ -3,9 +3,9 @@ import requests
 
 app = Flask(__name__)
 
-STORAGE_ACCOUNT = "yourstorageaccount"
+STORAGE_ACCOUNT = "staticaccweb"
 CONTAINER_NAME = "$web"
-SAS_TOKEN = "your-SAS-token"  # generated for blob service
+SAS_TOKEN = "sv=2024-11-04&ss=b&srt=sco&sp=rltfx&se=2025-07-17T17:14:39Z&st=2025-07-10T08:59:39Z&spr=https,http&sig=erya6iQg3Hr2FI8c5gyOudvMwaTBbD%2FsPmo6SHs2esI%3D"  # generated for blob service
 
 @app.route("/<path:folder>/")
 def serve_static(folder):
